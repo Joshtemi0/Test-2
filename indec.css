@@ -1,0 +1,179 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: "Outfit", sans-serif;
+    src: url(Outfit-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: "Young-Serif";
+    src: url(YoungSerif-Regular.ttf)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Stone-100);
+}
+
+.container {
+  background-color: var(--White);
+  color: var(--Stone600);
+  padding: 1rem;
+  width: 27.5rem;
+  border-radius: 1rem;
+  font-family: cursive;
+  font-size: 0.875rem;
+  margin:4rem;
+}
+
+img {
+  border-radius: 1rem;
+  width: 25.5rem;
+}
+
+.all {
+  font-family: "Outfit";
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  /* font-size: ; */
+}
+
+.main-title {
+  font-family: "Outfit";
+  color: var(--Stone900);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sub-title {
+    color: var(--Stone900);
+}
+
+.p-time {
+  background-color: var(--Rose50);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.title-1 {
+    font-family: cursive;
+  color: var(--Brown800);
+  font-weight: bold; 
+  font-size: 1.2rem;
+}
+
+.title-2 {
+  font-family:cursive;
+  color: var(--Rose800);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.tags {
+  margin-left: 1.7rem;
+}
+
+.tags>ul>li::marker {
+    color: var(--Rose800);
+    font-size: 0.6rem;
+}
+
+.-t1>ul > li::marker {
+    color: var(--Brown800);
+    font-size: 0.6rem;
+}
+
+ol > li::marker {
+  color: var(--Rose800);
+  font-weight: 600;
+}
+
+table tbody td{
+  height: 2.8rem;
+  border-top: 1px solid;
+  margin: 0;
+  border-color: var(--Stone150);
+}
+
+th:first-child {
+    font-weight: 100;
+}
+
+th {
+    padding-bottom: 0.5rem;
+}
+
+.t2 {
+    color: var(--Brown800);
+    font-weight: 600;
+  }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+tr {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 1px solid;
+  border-color: var(--Stone150);
+}
+
+.dash {
+    border: 1px dashed var(--Stone150);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*********** Media Quary **************/
+
+@media screen and (max-width: 780px) {
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .details {
+    padding: 1.3rem;
+  }
+
+  img {
+    border-radius: 0;
+    width: 100%;
+  }
+}
